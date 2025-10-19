@@ -1,0 +1,104 @@
+/* === GLOBAL SETTINGS === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* === FULL PAGE BACKGROUND === */
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* === TITLE === */
+h1 {
+    font-size: 34px;
+    color: #00e6ff;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(0, 230, 255, 0.6);
+}
+
+/* === FORM CONTAINER === */
+form {
+    background: #1f2b44;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* === INPUT FIELDS === */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #2a3c5c;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"]:focus {
+    background: #324b72;
+    border-color: #00e6ff;
+    box-shadow: 0 0 8px rgba(0, 230, 255, 0.5);
+}
+
+/* === BUTTON === */
+button {
+    width: 100%;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: #fff;
+    padding: 12px 0;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.7);
+}
+
+/* === RESULT TEXT === */
+h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #00ffcc;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(0, 255, 200, 0.6);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 450px) {
+    form {
+        width: 90%;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
